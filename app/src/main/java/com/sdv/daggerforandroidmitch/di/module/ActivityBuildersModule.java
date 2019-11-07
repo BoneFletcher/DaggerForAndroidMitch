@@ -1,6 +1,7 @@
 package com.sdv.daggerforandroidmitch.di.module;
 
 
+import com.sdv.daggerforandroidmitch.di.auth.AuthModel;
 import com.sdv.daggerforandroidmitch.di.auth.AuthViewModelsModule;
 import com.sdv.daggerforandroidmitch.ui.auth.AuthActivity;
 
@@ -16,7 +17,7 @@ import dagger.android.ContributesAndroidInjector;
 public abstract class ActivityBuildersModule {
 
     @ContributesAndroidInjector(
-            modules = {AuthViewModelsModule.class}
+            modules = {AuthViewModelsModule.class, AuthModel.class}
     )
     abstract AuthActivity contributeAuthActivity();
 
