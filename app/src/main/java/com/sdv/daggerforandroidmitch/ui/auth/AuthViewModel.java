@@ -26,6 +26,7 @@ import io.reactivex.schedulers.Schedulers;
  */
 public class AuthViewModel extends ViewModel {
 
+    private static final String TAG = "AuthViewModel";
     private final AuthAPI authAPI;
 
     private MediatorLiveData<User> authUser = new MediatorLiveData<>();
@@ -33,7 +34,6 @@ public class AuthViewModel extends ViewModel {
     @Inject
     public AuthViewModel(AuthAPI authAPI) {
         this.authAPI = authAPI;
-
     }
 
     public void authenticateWithId(int userId){

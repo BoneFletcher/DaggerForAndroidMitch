@@ -1,4 +1,4 @@
-package com.sdv.daggerforandroidmitch.viewmodels;
+package com.sdv.daggerforandroidmitch.di;
 
 import java.util.Map;
 

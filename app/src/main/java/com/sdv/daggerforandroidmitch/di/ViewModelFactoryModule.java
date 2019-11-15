@@ -1,7 +1,5 @@
 package com.sdv.daggerforandroidmitch.di;
 
-import com.sdv.daggerforandroidmitch.viewmodels.ViewModelProviderFactory;
-
 import androidx.lifecycle.ViewModelProvider;
 import dagger.Binds;
 import dagger.Module;

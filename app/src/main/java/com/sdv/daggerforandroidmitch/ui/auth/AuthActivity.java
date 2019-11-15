@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import com.bumptech.glide.RequestManager;
 import com.sdv.daggerforandroidmitch.R;
 import com.sdv.daggerforandroidmitch.models.User;
-import com.sdv.daggerforandroidmitch.viewmodels.ViewModelProviderFactory;
+import com.sdv.daggerforandroidmitch.di.ViewModelProviderFactory;
 
 import javax.inject.Inject;
 
@@ -44,7 +44,7 @@ public class AuthActivity extends DaggerAppCompatActivity implements View.OnClic
         findViewById(R.id.login_button).setOnClickListener(this);
         viewModel = ViewModelProviders.of(this, providerFactory).get(AuthViewModel.class);
         setLogo();
-
+        subscribeObservers();
     }
 
     private void subscribeObservers() {
